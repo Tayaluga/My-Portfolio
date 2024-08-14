@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Responsive portfolio website - Bedimcode</title>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#home" class="nav__logo">Asad <span>Hussain</span></a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+               <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+               <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+               <li class="nav__item"><a href="#projects" class="nav__link">Project</a></li>
+               <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__close" id="nav-close">
+               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.01 47.01">
+                  <path class="cls-1" d="M50,50" transform="translate(-1.5 -1.5)" />
+                  <path class="cls-1" d="M0,0" transform="translate(-1.5 -1.5)" />
+                  <path
+                     d="M43.38,2.38,29.49,16.27l-22,22L2.38,43.38c-2.74,2.73,1.51,7,4.24,4.24L20.51,33.73l22-22,5.07-5.07c2.74-2.73-1.51-7-4.24-4.24Z"
+                     transform="translate(-1.5 -1.5)" />
+                  <path
+                     d="M2.38,6.62,16.27,20.51l22,22,5.07,5.07c2.73,2.74,7-1.51,4.24-4.24L33.73,29.49l-22-22L6.62,2.38C3.89-.36-.36,3.89,2.38,6.62Z"
+                     transform="translate(-1.5 -1.5)" />
+               </svg>
+            </div>
+
+         </div>
+         <div class="nav__toggle" id="nav-toggle">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.8 40">
+               <path class="cls-1" d="M50,50" transform="translate(-2.1 -5)" />
+               <path class="cls-1" d="M0,0" transform="translate(-2.1 -5)" />
+               <path class="cls-2" d="M0,7" transform="translate(-2.1 -5)" />
+               <path class="cls-2" d="M50,7" transform="translate(-2.1 -5)" />
+               <path d="M5,28H45c3.86,0,3.87-6,0-6H5c-3.86,0-3.87,6,0,6Z" transform="translate(-2.1 -5)" />
+               <path d="M5,11H45c3.86,0,3.87-6,0-6H5c-3.86,0-3.87,6,0,6Z" transform="translate(-2.1 -5)" />
+               <path d="M5,45H45c3.86,0,3.87-6,0-6H5c-3.86,0-3.87,6,0,6Z" transform="translate(-2.1 -5)" />
+            </svg>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid" id="home-container">
+            <div class="home__content">
+               <div class="home__data">
+                  <h3 class="home__subtitle">
+                     Hello, <span>I'm</span>
+                  </h3>
+                  <h1 class="home__title">Asad Hussain</h1>
+                  <h3 class="home__education">a <span class="switching">Front-end Developer</span></h3>
+                  <p class="home__discription">
+                     With knowledge in web development and
+                     design, I offer the best projects resulting
+                     in quality work.
+                  </p>
+
+                  <a href="#contact" class="button">Let's Talk</a>
+               </div>
+               <div class="home__social">
+                  <a href="#" target="_blank" class="home__social-link"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                           d="M12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2ZM8.59339 7.30019L8.39232 7.30833C8.26293 7.31742 8.13607 7.34902 8.02057 7.40811C7.93392 7.45244 7.85348 7.51651 7.72709 7.63586C7.60774 7.74855 7.53857 7.84697 7.46569 7.94186C7.09599 8.4232 6.89729 9.01405 6.90098 9.62098C6.90299 10.1116 7.03043 10.5884 7.23169 11.0336C7.63982 11.9364 8.31288 12.8908 9.20194 13.7759C9.4155 13.9885 9.62473 14.2034 9.85034 14.402C10.9538 15.3736 12.2688 16.0742 13.6907 16.4482C13.6907 16.4482 14.2507 16.5342 14.2589 16.5347C14.4444 16.5447 14.6296 16.5313 14.8153 16.5218C15.1066 16.5068 15.391 16.428 15.6484 16.2909C15.8139 16.2028 15.8922 16.159 16.0311 16.0714C16.0311 16.0714 16.0737 16.0426 16.1559 15.9814C16.2909 15.8808 16.3743 15.81 16.4866 15.6934C16.5694 15.6074 16.6406 15.5058 16.6956 15.3913C16.7738 15.2281 16.8525 14.9166 16.8838 14.6579C16.9077 14.4603 16.9005 14.3523 16.8979 14.2854C16.8936 14.1778 16.8047 14.0671 16.7073 14.0201L16.1258 13.7587C16.1258 13.7587 15.2563 13.3803 14.7245 13.1377C14.6691 13.1124 14.6085 13.1007 14.5476 13.097C14.4142 13.0888 14.2647 13.1236 14.1696 13.2238C14.1646 13.2218 14.0984 13.279 13.3749 14.1555C13.335 14.2032 13.2415 14.3069 13.0798 14.2972C13.0554 14.2955 13.0311 14.292 13.0074 14.2858C12.9419 14.2685 12.8781 14.2457 12.8157 14.2193C12.692 14.1668 12.6486 14.1469 12.5641 14.1105C11.9868 13.8583 11.457 13.5209 10.9887 13.108C10.8631 12.9974 10.7463 12.8783 10.6259 12.7616C10.2057 12.3543 9.86169 11.9211 9.60577 11.4938C9.5918 11.4705 9.57027 11.4368 9.54708 11.3991C9.50521 11.331 9.45903 11.25 9.44455 11.1944C9.40738 11.0473 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.74939 10.663 9.86248 10.5183C9.97128 10.379 10.0652 10.2428 10.125 10.1457C10.2428 9.95633 10.2801 9.76062 10.2182 9.60963C9.93764 8.92565 9.64818 8.24536 9.34986 7.56894C9.29098 7.43545 9.11585 7.33846 8.95659 7.32007C8.90265 7.31384 8.84875 7.30758 8.79459 7.30402C8.66053 7.29748 8.5262 7.29892 8.39232 7.30833L8.59339 7.30019Z">
+                        </path>
+                     </svg></a>
+                  <a href="#" target="_blank" class="home__social-link"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                           d="M13.001 19.9381C16.9473 19.446 20.001 16.0796 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 16.0796 7.05467 19.446 11.001 19.9381V14H9.00098V12H11.001V10.3458C11.001 9.00855 11.1402 8.52362 11.4017 8.03473C11.6631 7.54584 12.0468 7.16216 12.5357 6.9007C12.9184 6.69604 13.3931 6.57252 14.2227 6.51954C14.5519 6.49851 14.9781 6.52533 15.501 6.6V8.5H15.001C14.0837 8.5 13.7052 8.54332 13.4789 8.66433C13.3386 8.73939 13.2404 8.83758 13.1653 8.97793C13.0443 9.20418 13.001 9.42853 13.001 10.3458V12H15.501L15.001 14H13.001V19.9381ZM12.001 22C6.47813 22 2.00098 17.5228 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22Z">
+                        </path>
+                     </svg></a>
+                  <a href="#" target="_blank" class="home__social-link"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                           d="M17.0943 7.14643C17.6874 6.93123 17.9818 6.85378 18.1449 6.82608C18.1461 6.87823 18.1449 6.92051 18.1422 6.94825C17.9096 9.39217 16.8906 15.4048 16.3672 18.2026C16.2447 18.8578 16.1507 19.1697 15.5179 18.798C15.1014 18.5532 14.7245 18.2452 14.3207 17.9805C12.9961 17.1121 11.1 15.8189 11.2557 15.8967C9.95162 15.0373 10.4975 14.5111 11.2255 13.8093C11.3434 13.6957 11.466 13.5775 11.5863 13.4525C11.64 13.3967 11.9027 13.1524 12.2731 12.8081C13.4612 11.7035 15.7571 9.56903 15.8151 9.32202C15.8246 9.2815 15.8334 9.13045 15.7436 9.05068C15.6539 8.97092 15.5215 8.9982 15.4259 9.01989C15.2904 9.05064 13.1326 10.4769 8.95243 13.2986C8.33994 13.7192 7.78517 13.9242 7.28811 13.9134L7.29256 13.9156C6.63781 13.6847 5.9849 13.4859 5.32855 13.286C4.89736 13.1546 4.46469 13.0228 4.02904 12.8812C3.92249 12.8466 3.81853 12.8137 3.72083 12.783C8.24781 10.8109 11.263 9.51243 12.7739 8.884C14.9684 7.97124 16.2701 7.44551 17.0943 7.14643ZM19.5169 5.21806C19.2635 5.01244 18.985 4.91807 18.7915 4.87185C18.5917 4.82412 18.4018 4.80876 18.2578 4.8113C17.7814 4.81969 17.2697 4.95518 16.4121 5.26637C15.5373 5.58382 14.193 6.12763 12.0058 7.03736C10.4638 7.67874 7.39388 9.00115 2.80365 11.001C2.40046 11.1622 2.03086 11.3451 1.73884 11.5619C1.46919 11.7622 1.09173 12.1205 1.02268 12.6714C0.970519 13.0874 1.09182 13.4714 1.33782 13.7738C1.55198 14.037 1.82635 14.1969 2.03529 14.2981C2.34545 14.4483 2.76276 14.5791 3.12952 14.6941C3.70264 14.8737 4.27444 15.0572 4.84879 15.233C6.62691 15.7773 8.09066 16.2253 9.7012 17.2866C10.8825 18.0651 12.041 18.8775 13.2243 19.6531C13.6559 19.936 14.0593 20.2607 14.5049 20.5224C14.9916 20.8084 15.6104 21.0692 16.3636 20.9998C17.5019 20.8951 18.0941 19.8479 18.3331 18.5703C18.8552 15.7796 19.8909 9.68351 20.1332 7.13774C20.1648 6.80544 20.1278 6.433 20.097 6.25318C20.0653 6.068 19.9684 5.58448 19.5169 5.21806Z">
+                        </path>
+                     </svg></a>
+               </div>
+            </div>
+            <div class="home__image">
+               <svg viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="maskBlob" mask-type="alpha">
+                     <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                     170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                     447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                     587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                     438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+                  </mask>
+                  <g mask="url(#maskBlob)">
+                     <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                     170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                     447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                     587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                     438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+
+                     <rect x="37" width="476" height="630" fill="url(#pattern0)" />
+                  </g>
+
+                  <rect x="37" width="476" height="300" fill="url(#pattern1)" />
+
+                  <defs>
+                     <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+                     </pattern>
+
+                     <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+                     </pattern>
+
+                     <!-- Insert your profile (recommended size: 640 x 940) -->
+                     <image class="home__img" id="imageBlob" width="640" height="925" href="/assets/img/perfil.png" />
+                  </defs>
+               </svg>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h3 class="section__subtitle">My <span>Intro</span></h3>
+               <h2 class="section__title">About me</h2>
+               <p class="about__discription">Video editor, Graphic designer, Backend,Frontend developer, I create web
+                  pages with
+                  UI / UX user interface, I have years of
+                  experience and many clients are happy with the
+                  projects carried out.</p>
+               <a href="#" class="button">Contact me</a>
+            </div>
+            <div class="about__image">
+               <svg viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="maskBorder" mask-type="alpha">
+                     <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                           171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                           448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                           270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                           439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black" />
+                  </mask>
+                  <g mask="url(#maskBorder)">
+                     <rect x="37" width="476" height="630" fill="url(#pattern2)" />
+
+                     <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                           192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                           580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                           40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                           175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black"
+                        stroke-width="10" />
+                  </g>
+
+                  <rect x="37" width="476" height="300" fill="url(#pattern3)" />
+
+                  <defs>
+                     <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+                     </pattern>
+
+                     <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+                     </pattern>
+
+                     <!-- Insert your profile (recommended size: 640 x 940) -->
+                     <image id="imageBorder" width="640" height="940" href="/assets/img/perfil.png" />
+                  </defs>
+               </svg>
+            </div>
+
+         </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section">
+         <div class="skills__container container grid">
+            <div class="skills__data">
+               <h3 class="section__subtitle">Favorite <span>Skills</span></h3>
+               <h2 class="section__title">
+                  My Skills
+               </h2>
+
+               <p class="skills__discription">See fully what skills I have and perform,
+                  to develop the projects for you.</p>
+
+               <a href="#projects" class="button">See Projects</a>
+            </div>
+            <div class="skills__content">
+               <ol class="skills__group">
+                  <li class="skills__items">HTML</li>
+                  <li class="skills__items">Web Design</li>
+                  <li class="skills__items">Javascript</li>
+                  <li class="skills__items">Python</li>
+                  <li class="skills__items">Laveral</li>
+                  <li class="skills__items">PHP</li>
+                  <li class="skills__items">Mern</li>
+                  <li class="skills__items">MongoDB</li>
+                  <li class="skills__items">ASP.net</li>
+
+               </ol>
+
+               <ol class="skills__group" start="">
+                  <li class="skills__items">Youtube SEO</li>
+                  <li class="skills__items">Script Writing</li>
+                  <li class="skills__items">Video Editing</li>
+                  <li class="skills__items">Graphic Designing</li>
+                  <li class="skills__items">Content Writing</li>
+                  <li class="skills__items">Banner Designing</li>
+                  <li class="skills__items">Facebook & Google ads</li>
+               </ol>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+         <h3 class="section__subtitle">
+            My <span>Services</span>
+         </h3>
+         <h2 class="section__title">
+            What I do
+         </h2>
+         <div class="services__container container grid">
+            <article class="services__card">
+               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                  <defs>
+                     <style>
+                        .cls-1 {
+                           fill: #e2e2e2;
+                        }
+                     </style>
+                  </defs>
+                  <path class="cls-1"
+                     d="M43.5,42H6.5L8,43.5V6.5L6.5,8h37L42,6.5v37a1.5,1.5,0,0,0,3,0V6.5A1.52,1.52,0,0,0,43.5,5H6.5A1.52,1.52,0,0,0,5,6.5v37A1.52,1.52,0,0,0,6.5,45h37A1.5,1.5,0,0,0,43.5,42Z"
+                     transform="translate(-5 -5)" />
+                  <path class="cls-1"
+                     d="M43.5,15H6.5L8,16.5V6.5L6.5,8h37L42,6.5v10a1.5,1.5,0,0,0,3,0V6.5A1.52,1.52,0,0,0,43.5,5H6.5A1.52,1.52,0,0,0,5,6.5v10A1.52,1.52,0,0,0,6.5,18h37A1.5,1.5,0,0,0,43.5,15Z"
+                     transform="translate(-5 -5)" />
+                  <path class="cls-1"
+                     d="M19.5,42H6.5L8,43.5v-27L6.5,18h13L18,16.5v27a1.5,1.5,0,0,0,3,0v-27A1.52,1.52,0,0,0,19.5,15H6.5A1.52,1.52,0,0,0,5,16.5v27A1.52,1.52,0,0,0,6.5,45h13A1.5,1.5,0,0,0,19.5,42Z"
+                     transform="translate(-5 -5)" />
+               </svg>
+
+               <h2 class="services__title">Web Developer</h2>
+               <p class="services__discription">Development of custom web pages.
+                  Using current technologies and
+                  libraries of the labor field.</p>
+
+            </article>
+            <article class="services__card">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                     d="M12 20H20V22H12C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 14.2512 21.2561 16.3287 20.0007 18H17.2916C18.9525 16.5341 20 14.3894 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 10C10.8954 10 10 9.10457 10 8C10 6.89543 10.8954 6 12 6C13.1046 6 14 6.89543 14 8C14 9.10457 13.1046 10 12 10ZM8 14C6.89543 14 6 13.1046 6 12C6 10.8954 6.89543 10 8 10C9.10457 10 10 10.8954 10 12C10 13.1046 9.10457 14 8 14ZM16 14C14.8954 14 14 13.1046 14 12C14 10.8954 14.8954 10 16 10C17.1046 10 18 10.8954 18 12C18 13.1046 17.1046 14 16 14ZM12 18C10.8954 18 10 17.1046 10 16C10 14.8954 10.8954 14 12 14C13.1046 14 14 14.8954 14 16C14 17.1046 13.1046 18 12 18Z">
+                  </path>
+               </svg>
+               <h2 class="services__title">Video Editing</h2>
+               <p class="services__discription">I can edit videos with an experience of 4 years videos for socail media,
+                  podcast gaming and much more</p>
+
+            </article>
+
+            <article class="services__card">
+               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44">
+                  <defs>
+                     <style>
+                        .cls-1 {
+                           fill: #e2e2e2;
+                        }
+                     </style>
+                  </defs>
+                  <path class="cls-1"
+                     d="M37,44H13l1.5,1.5V4.5L13,6H37L35.5,4.5v41a1.5,1.5,0,0,0,3,0V4.5A1.52,1.52,0,0,0,37,3H13a1.52,1.52,0,0,0-1.5,1.5v41A1.52,1.52,0,0,0,13,47H37A1.5,1.5,0,0,0,37,44Z"
+                     transform="translate(-11.5 -3)" />
+               </svg>
+               <h2 class="services__title">UI/UX Designer</h2>
+               <p class="services__discription">I offer design of web interfaces and
+                  mobile applications, design made in
+                  figma, adobe xd and sketch.</p>
+            </article>
+
+            <article class="services__card">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                     d="M2.9918 21C2.44405 21 2 20.5551 2 20.0066V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918ZM20 15V5H4V19L14 9L20 15ZM20 17.8284L14 11.8284L6.82843 19H20V17.8284ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z">
+                  </path>
+               </svg>
+               <h2 class="services__title">Thumbnail Designing</h2>
+               <p class="services__discription">I can make thumbanails, posters and much more as you want as a graphic
+                  designer with an experience of 5 years.</p>
+            </article>
+
+            <article class="services__card">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                     d="M8 3C4.13401 3 1 6.13401 1 10C1 13.866 4.13401 17 8 17H9.07089C9.02417 16.6734 9 16.3395 9 16C9 15.6605 9.02417 15.3266 9.07089 15H8C5.23858 15 3 12.7614 3 10C3 7.23858 5.23858 5 8 5H16C18.7614 5 21 7.23858 21 10C21 10.3428 20.9655 10.6775 20.8998 11.0008C21.4853 11.5748 21.9704 12.2508 22.3264 13C22.7583 12.0907 23 11.0736 23 10C23 6.13401 19.866 3 16 3H8ZM16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13ZM11 16C11 13.2386 13.2386 11 16 11C18.7614 11 21 13.2386 21 16C21 17.0191 20.6951 17.967 20.1716 18.7574L22.7071 21.2929L21.2929 22.7071L18.7574 20.1716C17.967 20.6951 17.0191 21 16 21C13.2386 21 11 18.7614 11 16Z">
+                  </path>
+               </svg>
+               <h2 class="services__title">SEO</h2>
+               <p class="services__discription">I can do SEO for your youtube channal or blogger site to get organic
+                  views.</p>
+            </article>
+
+            <article class="services__card">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.6458V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11.6458C2.37764 10.9407 2 10.0144 2 9V3C2 2.44772 2.44772 2 3 2H21C21.5523 2 22 2.44772 22 3V9C22 10.0144 21.6224 10.9407 21 11.6458ZM19 12.874C18.6804 12.9562 18.3453 13 18 13C16.8053 13 15.7329 12.4762 15 11.6458C14.2671 12.4762 13.1947 13 12 13C10.8053 13 9.73294 12.4762 9 11.6458C8.26706 12.4762 7.19469 13 6 13C5.6547 13 5.31962 12.9562 5 12.874V20H19V12.874ZM14 9C14 8.44772 14.4477 8 15 8C15.5523 8 16 8.44772 16 9C16 10.1046 16.8954 11 18 11C19.1046 11 20 10.1046 20 9V4H4V9C4 10.1046 4.89543 11 6 11C7.10457 11 8 10.1046 8 9C8 8.44772 8.44772 8 9 8C9.55228 8 10 8.44772 10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9Z"></path></svg>
+               <h2 class="services__title">Marketing</h2>
+               <p class="services__discription">I can do facebook and google ads Marketing for your product or anything.</p>
+            </article>
+
+         </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+         <h3 class="section__subtitle">My <span>Jobs</span></h3>
+         <h2 class="section__title">Recent & Past Projects</h2>
+         <div class="projects__container container grid">
+            <article class="projects__card">
+               <img src="/assets/img/project-img-1.jpg" alt="prpjects_image" class="projects__img">
+               <div class="projects__modal">
+                  <span class="projects__subtitile">
+                     Web
+                  </span>
+                  <h2 class="projects__title">
+                     Modern Website
+                  </h2>
+                  <a href="#" class="projects__button">View Demo <svg id="Layer_1" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
+                        <path
+                           d="M42.5,24.5v21l3-3H4.5l3,3V4.5l-3,3h20c3.86,0,3.87-6,0-6H4.5a3,3,0,0,0-3,3v41a3,3,0,0,0,3,3h41a3,3,0,0,0,3-3v-21c0-3.86-6-3.87-6,0Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path
+                           d="M45.38.38,25.24,20.51l-2.86,2.87c-2.74,2.73,1.51,7,4.24,4.24L46.76,7.49l2.86-2.87c2.74-2.73-1.51-7-4.24-4.24Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path d="M35.5,5.5h12l-3-3v12a3,3,0,0,0,6,0V2.5a3,3,0,0,0-3-3h-12a3,3,0,0,0-3,3,3,3,0,0,0,3,3Z"
+                           transform="translate(-1.5 0.5)" />
+                     </svg></a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <img src="/assets/img/project-img-2.jpg" alt="prpjects_image" class="projects__img">
+               <div class="projects__modal">
+                  <span class="projects__subtitile">
+                     Web
+                  </span>
+                  <h2 class="projects__title">
+                     Modern Website
+                  </h2>
+                  <a href="#" class="projects__button">View Demo <svg id="Layer_1" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
+                        <path
+                           d="M42.5,24.5v21l3-3H4.5l3,3V4.5l-3,3h20c3.86,0,3.87-6,0-6H4.5a3,3,0,0,0-3,3v41a3,3,0,0,0,3,3h41a3,3,0,0,0,3-3v-21c0-3.86-6-3.87-6,0Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path
+                           d="M45.38.38,25.24,20.51l-2.86,2.87c-2.74,2.73,1.51,7,4.24,4.24L46.76,7.49l2.86-2.87c2.74-2.73-1.51-7-4.24-4.24Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path d="M35.5,5.5h12l-3-3v12a3,3,0,0,0,6,0V2.5a3,3,0,0,0-3-3h-12a3,3,0,0,0-3,3,3,3,0,0,0,3,3Z"
+                           transform="translate(-1.5 0.5)" />
+                     </svg></a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <img src="/assets/img/project-img-3.jpg" alt="prpjects_image" class="projects__img">
+               <div class="projects__modal">
+                  <span class="projects__subtitile">
+                     Web
+                  </span>
+                  <h2 class="projects__title">
+                     Modern Website
+                  </h2>
+                  <a href="#" class="projects__button">View Demo <svg id="Layer_1" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
+                        <path
+                           d="M42.5,24.5v21l3-3H4.5l3,3V4.5l-3,3h20c3.86,0,3.87-6,0-6H4.5a3,3,0,0,0-3,3v41a3,3,0,0,0,3,3h41a3,3,0,0,0,3-3v-21c0-3.86-6-3.87-6,0Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path
+                           d="M45.38.38,25.24,20.51l-2.86,2.87c-2.74,2.73,1.51,7,4.24,4.24L46.76,7.49l2.86-2.87c2.74-2.73-1.51-7-4.24-4.24Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path d="M35.5,5.5h12l-3-3v12a3,3,0,0,0,6,0V2.5a3,3,0,0,0-3-3h-12a3,3,0,0,0-3,3,3,3,0,0,0,3,3Z"
+                           transform="translate(-1.5 0.5)" />
+                     </svg></a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <img src="/assets/img/project-img-4.jpg" alt="prpjects_image" class="projects__img">
+               <div class="projects__modal">
+                  <span class="projects__subtitile">
+                     Web
+                  </span>
+                  <h2 class="projects__title">
+                     Modern Website
+                  </h2>
+                  <a href="#" class="projects__button">View Demo <svg id="Layer_1" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
+                        <path
+                           d="M42.5,24.5v21l3-3H4.5l3,3V4.5l-3,3h20c3.86,0,3.87-6,0-6H4.5a3,3,0,0,0-3,3v41a3,3,0,0,0,3,3h41a3,3,0,0,0,3-3v-21c0-3.86-6-3.87-6,0Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path
+                           d="M45.38.38,25.24,20.51l-2.86,2.87c-2.74,2.73,1.51,7,4.24,4.24L46.76,7.49l2.86-2.87c2.74-2.73-1.51-7-4.24-4.24Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path d="M35.5,5.5h12l-3-3v12a3,3,0,0,0,6,0V2.5a3,3,0,0,0-3-3h-12a3,3,0,0,0-3,3,3,3,0,0,0,3,3Z"
+                           transform="translate(-1.5 0.5)" />
+                     </svg></a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <img src="/assets/img/project-img-5.jpg" alt="prpjects_image" class="projects__img">
+               <div class="projects__modal">
+                  <span class="projects__subtitile">
+                     Web
+                  </span>
+                  <h2 class="projects__title">
+                     Modern Website
+                  </h2>
+                  <a href="#" class="projects__button">View Demo <svg id="Layer_1" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
+                        <path
+                           d="M42.5,24.5v21l3-3H4.5l3,3V4.5l-3,3h20c3.86,0,3.87-6,0-6H4.5a3,3,0,0,0-3,3v41a3,3,0,0,0,3,3h41a3,3,0,0,0,3-3v-21c0-3.86-6-3.87-6,0Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path
+                           d="M45.38.38,25.24,20.51l-2.86,2.87c-2.74,2.73,1.51,7,4.24,4.24L46.76,7.49l2.86-2.87c2.74-2.73-1.51-7-4.24-4.24Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path d="M35.5,5.5h12l-3-3v12a3,3,0,0,0,6,0V2.5a3,3,0,0,0-3-3h-12a3,3,0,0,0-3,3,3,3,0,0,0,3,3Z"
+                           transform="translate(-1.5 0.5)" />
+                     </svg></a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <img src="/assets/img/project-img-6.jpg" alt="prpjects_image" class="projects__img">
+               <div class="projects__modal">
+                  <span class="projects__subtitile">
+                     Web
+                  </span>
+                  <h2 class="projects__title">
+                     Modern Website
+                  </h2>
+                  <a href="#" class="projects__button">View Demo <svg id="Layer_1" data-name="Layer 1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 49">
+                        <path
+                           d="M42.5,24.5v21l3-3H4.5l3,3V4.5l-3,3h20c3.86,0,3.87-6,0-6H4.5a3,3,0,0,0-3,3v41a3,3,0,0,0,3,3h41a3,3,0,0,0,3-3v-21c0-3.86-6-3.87-6,0Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path
+                           d="M45.38.38,25.24,20.51l-2.86,2.87c-2.74,2.73,1.51,7,4.24,4.24L46.76,7.49l2.86-2.87c2.74-2.73-1.51-7-4.24-4.24Z"
+                           transform="translate(-1.5 0.5)" />
+                        <path d="M35.5,5.5h12l-3-3v12a3,3,0,0,0,6,0V2.5a3,3,0,0,0-3-3h-12a3,3,0,0,0-3,3,3,3,0,0,0,3,3Z"
+                           transform="translate(-1.5 0.5)" />
+                     </svg></a>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <h3 class="section__subtitle">Get In <span>Touch</span></h3>
+         <h2 class="section__title">Contact Me</h2>
+         <div class="contact__container container grid">
+            <form action="" id="contact-form" class="contact__form">
+               <div class="contact__group">
+                  <input type="text" name="user__name" required placeholder="Enter Your Name" class="contact__input">
+                  <input type="email" name="user__email" required placeholder="Enter Your Email" class="contact__input">
+               </div>
+               <textarea name="user__project" required placeholder="Enter Your Messege" id=""
+                  class="contact__input"></textarea>
+               <p class="contact__message" id="contact-message">Message</p>
+               <button type="submit"
+                  onclick="alert('Sorry, We cannot send emails becuase netlify dont support backend its just for static sites')"
+                  class="button contact__button">Send Message</button>
+            </form>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+         <div>
+            <h1 class="footer__title">Asad <span>Hussain</span></h1>
+            <h2 class="footer__education">
+               Multi Skill Master
+            </h2>
+         </div>
+         <div class="footer__social">
+            <a href="#" target="_blank" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                     d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z">
+                  </path>
+               </svg></a>
+            <a href="#" target="_blank" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                     d="M13.001 19.9381C16.9473 19.446 20.001 16.0796 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 16.0796 7.05467 19.446 11.001 19.9381V14H9.00098V12H11.001V10.3458C11.001 9.00855 11.1402 8.52362 11.4017 8.03473C11.6631 7.54584 12.0468 7.16216 12.5357 6.9007C12.9184 6.69604 13.3931 6.57252 14.2227 6.51954C14.5519 6.49851 14.9781 6.52533 15.501 6.6V8.5H15.001C14.0837 8.5 13.7052 8.54332 13.4789 8.66433C13.3386 8.73939 13.2404 8.83758 13.1653 8.97793C13.0443 9.20418 13.001 9.42853 13.001 10.3458V12H15.501L15.001 14H13.001V19.9381ZM12.001 22C6.47813 22 2.00098 17.5228 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22Z">
+                  </path>
+               </svg></a>
+            <a href="#" target="_blank" class="footer__social-link"><svg xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                     d="M17.0943 7.14643C17.6874 6.93123 17.9818 6.85378 18.1449 6.82608C18.1461 6.87823 18.1449 6.92051 18.1422 6.94825C17.9096 9.39217 16.8906 15.4048 16.3672 18.2026C16.2447 18.8578 16.1507 19.1697 15.5179 18.798C15.1014 18.5532 14.7245 18.2452 14.3207 17.9805C12.9961 17.1121 11.1 15.8189 11.2557 15.8967C9.95162 15.0373 10.4975 14.5111 11.2255 13.8093C11.3434 13.6957 11.466 13.5775 11.5863 13.4525C11.64 13.3967 11.9027 13.1524 12.2731 12.8081C13.4612 11.7035 15.7571 9.56903 15.8151 9.32202C15.8246 9.2815 15.8334 9.13045 15.7436 9.05068C15.6539 8.97092 15.5215 8.9982 15.4259 9.01989C15.2904 9.05064 13.1326 10.4769 8.95243 13.2986C8.33994 13.7192 7.78517 13.9242 7.28811 13.9134L7.29256 13.9156C6.63781 13.6847 5.9849 13.4859 5.32855 13.286C4.89736 13.1546 4.46469 13.0228 4.02904 12.8812C3.92249 12.8466 3.81853 12.8137 3.72083 12.783C8.24781 10.8109 11.263 9.51243 12.7739 8.884C14.9684 7.97124 16.2701 7.44551 17.0943 7.14643ZM19.5169 5.21806C19.2635 5.01244 18.985 4.91807 18.7915 4.87185C18.5917 4.82412 18.4018 4.80876 18.2578 4.8113C17.7814 4.81969 17.2697 4.95518 16.4121 5.26637C15.5373 5.58382 14.193 6.12763 12.0058 7.03736C10.4638 7.67874 7.39388 9.00115 2.80365 11.001C2.40046 11.1622 2.03086 11.3451 1.73884 11.5619C1.46919 11.7622 1.09173 12.1205 1.02268 12.6714C0.970519 13.0874 1.09182 13.4714 1.33782 13.7738C1.55198 14.037 1.82635 14.1969 2.03529 14.2981C2.34545 14.4483 2.76276 14.5791 3.12952 14.6941C3.70264 14.8737 4.27444 15.0572 4.84879 15.233C6.62691 15.7773 8.09066 16.2253 9.7012 17.2866C10.8825 18.0651 12.041 18.8775 13.2243 19.6531C13.6559 19.936 14.0593 20.2607 14.5049 20.5224C14.9916 20.8084 15.6104 21.0692 16.3636 20.9998C17.5019 20.8951 18.0941 19.8479 18.3331 18.5703C18.8552 15.7796 19.8909 9.68351 20.1332 7.13774C20.1648 6.80544 20.1278 6.433 20.097 6.25318C20.0653 6.068 19.9684 5.58448 19.5169 5.21806Z">
+                  </path>
+               </svg></a>
+         </div>
+         <span class="footer__copy">&#169; Copyright Asad Hussain. All rights reserved</span>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#home" class="scrollup" id="scroll-up"><svg id="Layer_1" data-name="Layer 1"
+         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.94 28.14">
+         <path d="M22,10.74V33c0,3.86,6,3.87,6,0V10.74c0-3.86-6-3.87-6,0Z" transform="translate(-13.53 -7.76)" />
+         <path
+            d="M18.64,21.34l8.48-8.48H22.88l8.48,8.48a3,3,0,0,0,4.25-4.24L27.12,8.62a3,3,0,0,0-4.24,0L14.39,17.1a3,3,0,0,0,4.25,4.24Z"
+            transform="translate(-13.53 -7.76)" />
+      </svg></a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="/assets/js/scrollreveal.min.js"></script>
+
+   <!--=============== EMAIL JS ===============-->
+
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
